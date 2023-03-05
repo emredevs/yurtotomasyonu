@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B0C494FF-2801-46BA-99CB-66C4CDE52961}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>yurtotomasyon.My.MyApplication</StartupObject>
+    <RootNamespace>yurtotomasyon</RootNamespace>
+    <AssemblyName>yurtotomasyon</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>yurtotomasyon.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>yurtotomasyon.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>formicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="anaform.Designer.vb">
+      <DependentUpon>anaform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="anaform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ayarlar.Designer.vb">
+      <DependentUpon>ayarlar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ayarlar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="baglanti.vb" />
+    <Compile Include="giris.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="giris.Designer.vb">
+      <DependentUpon>giris.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gorevekle.Designer.vb">
+      <DependentUpon>gorevekle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="gorevekle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gorevler.Designer.vb">
+      <DependentUpon>gorevler.vb</DependentUpon>
+    </Compile>
+    <Compile Include="gorevler.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="odaekle.Designer.vb">
+      <DependentUpon>odaekle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="odaekle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="odalar.Designer.vb">
+      <DependentUpon>odalar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="odalar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="odemeler.Designer.vb">
+      <DependentUpon>odemeler.vb</DependentUpon>
+    </Compile>
+    <Compile Include="odemeler.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrenciekle.Designer.vb">
+      <DependentUpon>ogrenciekle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenciekle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrenciler.Designer.vb">
+      <DependentUpon>ogrenciler.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenciler.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personelekle.Designer.vb">
+      <DependentUpon>personelekle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="personelekle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personeller.Designer.vb">
+      <DependentUpon>personeller.vb</DependentUpon>
+    </Compile>
+    <Compile Include="personeller.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="anaform.resx">
+      <DependentUpon>anaform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ayarlar.resx">
+      <DependentUpon>ayarlar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="giris.resx">
+      <DependentUpon>giris.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gorevekle.resx">
+      <DependentUpon>gorevekle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gorevler.resx">
+      <DependentUpon>gorevler.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="odaekle.resx">
+      <DependentUpon>odaekle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="odalar.resx">
+      <DependentUpon>odalar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="odemeler.resx">
+      <DependentUpon>odemeler.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrenciekle.resx">
+      <DependentUpon>ogrenciekle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrenciler.resx">
+      <DependentUpon>ogrenciler.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personelekle.resx">
+      <DependentUpon>personelekle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personeller.resx">
+      <DependentUpon>personeller.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Midnight City.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="formicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 </ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
